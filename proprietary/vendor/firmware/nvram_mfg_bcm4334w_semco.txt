@@ -1,0 +1,91 @@
+#SEMCO B58_E8_VID : 3333 (BCM4334W) - FW6.25.112.3_2014/08/05
+
+manfid=0x2d0
+prodid=0x0642
+vendid=0x14e4
+devid=0x4383
+boardtype=0x0642
+boardrev=0x1101
+boardnum=22
+macaddr=00:90:4c:c5:12:38
+sromrev=3
+
+boardflags=0x81a01
+xtalfreq=37400
+nocrc=1
+ag0=0
+aa2g=1
+ccode=ALL
+
+##2014.05.14 CAL
+#PA parameters for 2.4GHz_5_20
+pa0b0=0x14A2
+pa0b1=0xFD63
+pa0b2=0xFF40
+
+tssifloor2g=27
+extpagain2g=2
+
+# rssi params for 2.4GHz_140501
+rssismf2g=0xb
+rssismc2g=0x9
+rssisav2g=0x2
+
+maxp2ga0=74
+ofdm2gpo=0x77777777
+mcs2gpo0=0x9999
+mcs2gpo1=0x9999
+cckPwrOffset=4
+cckdigfilttype=24
+ofdmdigfilttype=3
+
+#il0macaddr=00:90:4c:c5:12:38
+wl0id=0x431b
+pagc2g=0x10
+
+# Parameters for DAC2x mode and ALPF bypass
+dacrate2xen=1
+txalpfbyp=1
+txalpfpu=1
+
+#For SEMCO B58-eLNA Module
+swctrlmap_2g=0x0c0c0c0c,0x12120202,0x02020202,0x11202,0x1ff
+
+elna_off_gain_idx_2g=30
+triso2g=8
+muxenab=0x10
+loflag=1
+
+txiqlopapu2g=0
+startdiq2g=0x0000
+txidxcap2g=16
+
+dlorange_lowlimit=5
+
+gain_settle_dly_2g=4
+noise_cal_po_2g=-1
+noise_cal_po_40_2g=-1
+noise_cal_high_gain_2g=73
+noise_cal_nf_substract_val_2g=346
+aci_detect_en_2g=1
+
+tempcaladj2g=0x03fefe
+
+clipthr_eLNA2g=70
+
+rssicorrnorm=-4
+rssicorratten=-4
+
+#BTC parameter_140805 
+btc_params80=0
+btc_params6=10
+btc_params95=53
+btc_params106=3000
+btc_params107=4500
+
+#ED Threshold_140805
+edonthd40=-81
+edoffthd40=-87
+edonthd20u=-81
+edonthd20l=-81
+edoffthd20ul=-87
