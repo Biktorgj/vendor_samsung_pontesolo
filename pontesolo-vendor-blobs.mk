@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/firmware/audience-es705-fw-ponte.bin:system/etc/firmware/audience-es705-fw-ponte.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/higear_am_en_us.bin:system/etc/firmware/higear_am_en_us.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/higear_search_en_us.bin:system/etc/firmware/higear_search_en_us.bin
-
+ 
 # ADSP Tapan Firmware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b00:system/etc/firmware/adsp.b00 \
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/firmware/modem.b17:system/etc/firmware/modem.b17 \
     $(LOCAL_PATH)/proprietary/etc/firmware/modem.b18:system/etc/firmware/modem.b18 \
     $(LOCAL_PATH)/proprietary/etc/firmware/modem.b19:system/etc/firmware/modem.b19 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b20:system/etc/firmware/modem.b20 \	
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b20:system/etc/firmware/modem.b20 \
     $(LOCAL_PATH)/proprietary/etc/firmware/modem.b21:system/etc/firmware/modem.b21 \
     $(LOCAL_PATH)/proprietary/etc/firmware/modem.b22:system/etc/firmware/modem.b22 \
     $(LOCAL_PATH)/proprietary/etc/firmware/modem.b23:system/etc/firmware/modem.b23 \
