@@ -41,28 +41,66 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so
 
-# Bluetooth
+# Broadcom Bluetooth-Wifi firmware and cal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4343wa1_semco.txt:system/vendor/firmware/nvram_mfg_bcm4343wa1_semco.txt \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4334w_semco.txt:system/etc/wifi/bcmdhd.cal \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/wlan_net_bcm4334w.bin:system/etc/firmware/fw_bcmdhd.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4334w_semco.txt:system/vendor/firmware/nvram_mfg_bcm4334w_semco.txt \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/BCM4334W.hcd:system/vendor/firmware/BCM4334W.hcd
+    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm4334W.hcd:system/vendor/firmware/bcm4334W.hcd
 
-# DRM
+# Audience ES705 Firmware
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/qseecomd:system/bin/qseecomd \
-    $(LOCAL_PATH)/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
-    $(LOCAL_PATH)/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
+    $(LOCAL_PATH)/proprietary/vendor/firmware/audience-es705-fw-ponte.bin:system/etc/firmware/audience-es705-fw-ponte.bin \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/higear_am_en_us.bin:system/etc/firmware/higear_am_en_us.bin \
+    $(LOCAL_PATH)/proprietary/vendor/firmware/higear_search_en_us.bin:system/etc/firmware/higear_search_en_us.bin
+
+# ADSP Tapan Firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b00:system/etc/firmware/adsp.b00 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b01:system/etc/firmware/adsp.b01 \
+	$(LOCAL_PATH)/proprietary/etc/firmware/adsp.b02:system/etc/firmware/adsp.b02 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b03:system/etc/firmware/adsp.b03 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b04:system/etc/firmware/adsp.b04 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b05:system/etc/firmware/adsp.b05 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b06:system/etc/firmware/adsp.b06 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b08:system/etc/firmware/adsp.b08 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b09:system/etc/firmware/adsp.b09 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.mdt:system/etc/firmware/adsp.mdt 
+
+# Hexagon modem Firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/firmware/mba.b00:system/etc/firmware/mba.b00 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/mba.mdt:system/etc/firmware/mba.mdt \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b00:system/etc/firmware/modem.b00 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b01:system/etc/firmware/modem.b01 \
+	$(LOCAL_PATH)/proprietary/etc/firmware/modem.b02:system/etc/firmware/modem.b02 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b03:system/etc/firmware/modem.b03 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b04:system/etc/firmware/modem.b04 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b05:system/etc/firmware/modem.b05 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b06:system/etc/firmware/modem.b06 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b09:system/etc/firmware/modem.b09 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b16:system/etc/firmware/modem.b16 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b17:system/etc/firmware/modem.b17 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b18:system/etc/firmware/modem.b18 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b19:system/etc/firmware/modem.b19 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b20:system/etc/firmware/modem.b20 \	
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b21:system/etc/firmware/modem.b21 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b22:system/etc/firmware/modem.b22 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b23:system/etc/firmware/modem.b23 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b24:system/etc/firmware/modem.b24 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b27:system/etc/firmware/modem.b27 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b28:system/etc/firmware/modem.b28 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b29:system/etc/firmware/modem.b29 \
+	$(LOCAL_PATH)/proprietary/etc/firmware/modem.mdt:system/etc/firmware/modem.mdt 
+	
+# VENUS Video subsystem firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
+	$(LOCAL_PATH)/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
+    $(LOCAL_PATH)/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -112,9 +150,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
