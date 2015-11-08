@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4334w_semco.txt:system/etc/wifi/bcmdhd.cal \
     $(LOCAL_PATH)/proprietary/vendor/firmware/wlan_net_bcm4334w.bin:system/etc/wifi/bcmdhd_sta.bin \
+	$(LOCAL_PATH)/proprietary/vendor/firmware/wlan_net_bcm4334w.bin:system/etc/firmware/fw_bcmdhd.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4334w_semco.txt:system/vendor/firmware/nvram_mfg_bcm4334w_semco.txt \
     $(LOCAL_PATH)/proprietary/vendor/firmware/bcm43342A.hcd:system/vendor/firmware/bcm43342A.hcd
 
