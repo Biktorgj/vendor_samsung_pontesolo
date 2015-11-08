@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4334w_semco.txt:system/etc/wifi/bcmdhd.cal \
     $(LOCAL_PATH)/proprietary/vendor/firmware/wlan_net_bcm4334w.bin:system/etc/wifi/bcmdhd_sta.bin \
     $(LOCAL_PATH)/proprietary/vendor/firmware/nvram_mfg_bcm4334w_semco.txt:system/vendor/firmware/nvram_mfg_bcm4334w_semco.txt \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm4334W.hcd:system/vendor/firmware/bcm43342A.hcd
+    $(LOCAL_PATH)/proprietary/vendor/firmware/bcm43342A.hcd:system/vendor/firmware/bcm43342A.hcd
 
 # Audience ES705 Firmware
 PRODUCT_COPY_FILES += \
@@ -55,43 +55,43 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/firmware/higear_search_en_us.bin:system/etc/firmware/higear_search_en_us.bin
  
 # ADSP Tapan Firmware
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b00:system/etc/firmware/adsp.b00 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b01:system/etc/firmware/adsp.b01 \
-	$(LOCAL_PATH)/proprietary/etc/firmware/adsp.b02:system/etc/firmware/adsp.b02 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b03:system/etc/firmware/adsp.b03 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b04:system/etc/firmware/adsp.b04 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b05:system/etc/firmware/adsp.b05 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b06:system/etc/firmware/adsp.b06 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b08:system/etc/firmware/adsp.b08 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b09:system/etc/firmware/adsp.b09 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.mdt:system/etc/firmware/adsp.mdt 
+# PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b00:system/etc/firmware/adsp.b00 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b01:system/etc/firmware/adsp.b01 \
+#	$(LOCAL_PATH)/proprietary/etc/firmware/adsp.b02:system/etc/firmware/adsp.b02 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b03:system/etc/firmware/adsp.b03 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b04:system/etc/firmware/adsp.b04 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b05:system/etc/firmware/adsp.b05 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b06:system/etc/firmware/adsp.b06 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b08:system/etc/firmware/adsp.b08 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.b09:system/etc/firmware/adsp.b09 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/adsp.mdt:system/etc/firmware/adsp.mdt 
 
 # Hexagon modem Firmware
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/firmware/mba.b00:system/etc/firmware/mba.b00 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/mba.mdt:system/etc/firmware/mba.mdt \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b00:system/etc/firmware/modem.b00 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b01:system/etc/firmware/modem.b01 \
-	$(LOCAL_PATH)/proprietary/etc/firmware/modem.b02:system/etc/firmware/modem.b02 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b03:system/etc/firmware/modem.b03 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b04:system/etc/firmware/modem.b04 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b05:system/etc/firmware/modem.b05 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b06:system/etc/firmware/modem.b06 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b09:system/etc/firmware/modem.b09 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b16:system/etc/firmware/modem.b16 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b17:system/etc/firmware/modem.b17 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b18:system/etc/firmware/modem.b18 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b19:system/etc/firmware/modem.b19 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b20:system/etc/firmware/modem.b20 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b21:system/etc/firmware/modem.b21 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b22:system/etc/firmware/modem.b22 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b23:system/etc/firmware/modem.b23 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b24:system/etc/firmware/modem.b24 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b27:system/etc/firmware/modem.b27 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b28:system/etc/firmware/modem.b28 \
-    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b29:system/etc/firmware/modem.b29 \
-	$(LOCAL_PATH)/proprietary/etc/firmware/modem.mdt:system/etc/firmware/modem.mdt 
+# PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/mba.b00:system/etc/firmware/mba.b00 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/mba.mdt:system/etc/firmware/mba.mdt \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b00:system/etc/firmware/modem.b00 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b01:system/etc/firmware/modem.b01 \
+#	$(LOCAL_PATH)/proprietary/etc/firmware/modem.b02:system/etc/firmware/modem.b02 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b03:system/etc/firmware/modem.b03 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b04:system/etc/firmware/modem.b04 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b05:system/etc/firmware/modem.b05 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b06:system/etc/firmware/modem.b06 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b09:system/etc/firmware/modem.b09 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b16:system/etc/firmware/modem.b16 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b17:system/etc/firmware/modem.b17 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b18:system/etc/firmware/modem.b18 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b19:system/etc/firmware/modem.b19 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b20:system/etc/firmware/modem.b20 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b21:system/etc/firmware/modem.b21 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b22:system/etc/firmware/modem.b22 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b23:system/etc/firmware/modem.b23 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b24:system/etc/firmware/modem.b24 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b27:system/etc/firmware/modem.b27 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b28:system/etc/firmware/modem.b28 \
+#    $(LOCAL_PATH)/proprietary/etc/firmware/modem.b29:system/etc/firmware/modem.b29 \
+#	$(LOCAL_PATH)/proprietary/etc/firmware/modem.mdt:system/etc/firmware/modem.mdt 
 	
 # VENUS Video subsystem firmware
 PRODUCT_COPY_FILES += \
