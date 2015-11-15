@@ -203,8 +203,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so \
-    $(LOCAL_PATH)/proprietary/lib/libyasalgo.so:system/lib/libyasalgo.so
+#    $(LOCAL_PATH)/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so \
+#    $(LOCAL_PATH)/proprietary/lib/libyasalgo.so:system/lib/libyasalgo.so
 
 # Thermal
 PRODUCT_COPY_FILES += \
